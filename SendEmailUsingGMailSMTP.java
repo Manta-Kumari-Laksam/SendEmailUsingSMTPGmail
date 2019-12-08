@@ -19,12 +19,8 @@ public class SendEmailUsingGMailSMTP{
 	      String from = "olsmanta@gmail.com";//change accordingly
 	      final String username = "olsmanta";//change accordingly
 	      final String password = "Orange@123";//change accordingly
-
-	     
-	      String host = "dhcp3.equant.com";
 	      
-//	      String host = "smtp.gmail.com";
-	      //String host = "127.0.0.1";
+	      String host = "smtp.gmail.com";
 
 	      Properties props = new Properties();
 	      props.put("mail.smtp.auth", "true");
@@ -32,9 +28,6 @@ public class SendEmailUsingGMailSMTP{
 	      props.put("mail.smtp.host", host);
 	      props.put("mail.smtp.port", "587");
 	      
-//	      props.put("mail.smtp.socketFactory.port", "465");
-//	      props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-
 	      // Get the Session object.
 	      Session session = Session.getInstance(props,
 	      new javax.mail.Authenticator() {
